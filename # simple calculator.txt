@@ -1,0 +1,221 @@
+# simple calculator
+try:
+  # prompt user
+    num1 = float(input("Please Enter The first number: "))
+    operator = input("Please choose the operator (+) for addition, (-) for subtraction, (*) for multiplication"
+                     "(/) for division , (%) for remainder: ")
+    num2 = float(input("Please Enter The second number: "))
+    
+    if operator == '+':
+        result = num1 + num2
+        print("The result is: ", result)
+    elif operator == '-':
+        result = num1 - num2
+        print("The result is: ", result)
+    elif operator == '*':
+        result = num1 * num2
+        print("The result is: ", result)
+    elif operator == '/':
+        try:
+            if True:
+                result = num1 / num2
+                print(result)
+        except ZeroDivisionError as err:
+            print(err, " oops! zero division occur ")
+    elif operator == '%':
+        if operator == '%':
+            result = num1 % num2
+            print("The result is: ", result)
+    else:
+        raise TypeError
+
+
+except ValueError:
+    print("wrong value, suggest integer or decimal")
+finally:
+    print("All Done")
+
+
+
+
+
+num_one = input("Enter 1st number: ")
+num_one = int(num_one)
+
+op = input("Enter operator: ")
+
+num_two = input("Enter 2nd number: ")
+num_two = int(num_two)
+
+if op == "+":
+    print(num_one + num_two)
+elif op == "-":
+    print(num_one - num_two)
+elif op == "*":
+    print(num_one * num_two)
+elif op == "/":
+    print(num_one / num_two)
+
+
+
+
+# Python program for simple calculator 
+  
+# Function to add two numbers  
+def add(num1, num2): 
+    return num1 + num2 
+  
+# Function to subtract two numbers  
+def subtract(num1, num2): 
+    return num1 - num2 
+  
+# Function to multiply two numbers 
+def multiply(num1, num2): 
+    return num1 * num2 
+  
+# Function to divide two numbers 
+def divide(num1, num2): 
+    return num1 / num2 
+  
+print("Please select operation -\n" \ 
+        "1. Add\n" \ 
+        "2. Subtract\n" \ 
+        "3. Multiply\n" \ 
+        "4. Divide\n") 
+  
+  
+# Take input from the user  
+select = input("Select operations form 1, 2, 3, 4 :") 
+  
+number_1 = int(input("Enter first number: ")) 
+number_2 = int(input("Enter second number: ")) 
+  
+if select == '1': 
+    print(number_1, "+", number_2, "=", 
+                    add(number_1, number_2)) 
+  
+elif select == '2': 
+    print(number_1, "-", number_2, "=", 
+                    subtract(number_1, number_2)) 
+  
+elif select == '3': 
+    print(number_1, "*", number_2, "=", 
+                    multiply(number_1, number_2)) 
+  
+elif select == '4': 
+    print(number_1, "/", number_2, "=", 
+                    divide(number_1, number_2)) 
+else: 
+    print("Invalid input") 
+
+
+
+
+
+
+# define the function
+def calculate():
+    print('Please choose your operator adding(+) subtracting(-) multiplying(*) didviding(/) for power(**) for module(%)')
+
+    number_1 = int(input("Enter your first digit: "))
+    operation = input("Enter your operator: ")
+    number_2 = int(input("Enter your first digit: "))
+
+
+# adding
+    if operation == '+':
+        print('{} + {} = '.format(number_1, number_2))
+        print(number_1 + number_2)
+        print("You were adding.\n")
+        print("How do I know that I'm a smart progammer ;)\n")
+
+# subtracting
+    elif operation == '-':
+        print('{} - {} = '.format(number_1, number_2))
+        print(number_1 - number_2)
+        print("You were subtracting.\n")
+        print("How do I know that I'm a smart progammer ;)\n")
+
+# mulitplaying
+    elif operation == '*':
+        print('{} * {} = '.format(number_1, number_2))
+        print(number_1 * number_2)
+        print("You were mulitplaying.")
+        print("How do I know that I'm a smart progammer ;)\n")
+
+# dividing
+    elif operation == '/':
+        print('{} / {} = '.format(number_1, number_2))
+        print(number_1 / number_2)
+        print("You were dividing.\n")
+        print("How do I know that I'm a smart progammer ;)\n")
+
+# for power
+    elif operation == '**':
+        print('{} ** {} = '.format(number_1, number_2))
+        print(number_1 ** number_2)
+        print("You were using for power.\n")
+        print("How do I know that I'm a smart progammer ;)\n")
+
+# module
+    elif operation == '%':
+        print('{} % {} = '.format(number_1, number_2))
+        print(number_1 % number_2)
+        print("You were using module.\n")
+        print("How do I know that I'm a smart progammer ;)\n")
+
+    # if they get a error
+    else:
+        print("Your number you have typed is invalid, please restart your program!")
+    # add again() here as a function outside the calculate()
+    again()
+
+
+def again():
+    cal_again = input("Do you want to calculate again? Y = yes or N = no: ")
+
+    # Taking user input
+    if cal_again.upper() == 'Y':
+        calculate()
+    elif cal_again.upper() == 'N':
+        print('Leave kid ;-;')
+    else:
+        again()
+
+
+def welcome():
+    print("Welcome to my calculator made by Pepa pig lol made in python :D")
+
+
+# use calculate() for the function
+welcome()
+calculate()
+
+
+
+
+
+
+
+print("Choose operator (+,-,*,/):")
+mode = input()
+print("Choose first int:")
+x = int(input())
+print("Choose second int:")
+y = int(input())
+
+print("Your result:")
+if mode == "+":
+    print(x+y)
+elif mode == "-":
+    print(x-y)
+elif mode == "*":
+    print(x*y)
+elif mode == "/":
+    print(x/y)
+
+
+def mutiply (x):
+    return _*x
+o = mutiply(_)
+print(o)
